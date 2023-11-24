@@ -820,7 +820,7 @@ body{
     /* Message Section */
 }
 
-@media (max-width: 340px){
+@media (max-width: 310px){
     /* Poem Part */
     .word{
         height: 130vh;
@@ -904,4 +904,10 @@ body{
         height: 140vh;
     }
     /* Message */
+}
+
+@media (max-width: 230px){
+    .side-info p{
+        font-size: 11px;
+    }
 }
