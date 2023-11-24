@@ -1,0 +1,819 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 4000px;
+    background-image: url(./Images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Classes for JavaScript Working */
+
+.none{
+    display: none;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.none_click{
+    pointer-events: none;
+}
+
+/* Classes for JavaScript Working */
+
+/* Hello Section */
+
+.H-sec{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-areas: "img img img img img img img img img img img img" ;
+}
+
+.H-sec img{
+    grid-area: img;
+    width: 100%;
+}
+
+/* Hello Section */
+
+/* word Section */
+
+.word{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.word .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85%;
+}
+
+.side-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.side-info p{
+    z-index: 2;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: #ffffff9c;
+    background-image: url(./Images/icons8-heart-64.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 56px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.side-image img{
+    max-width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+
+/* Card */
+
+.word .card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: 240px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+    background-size: cover;
+    background-image: url(./Images/354436891_812996303594294_3590267344157345248_n.jpg);
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: cyan;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+    
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+    
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+    
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+/* Card */
+
+
+
+
+/* word Section */
+
+/* Animation title */
+
+.title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ffb8;
+    position: relative;
+    overflow: hidden;
+}
+
+.title h1{
+    z-index: 1;
+    color: #2196F3;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title .allImg{
+    position: absolute;
+}
+
+.img{
+    animation: heart 6s linear infinite;
+}
+.img2{
+    animation: heart 5.6s linear infinite;
+}
+.img3{
+    animation: heart 5.2s linear infinite;
+}
+
+/* Second Title */
+
+.title .allImg2{
+    position: absolute;
+}
+
+.img4{
+    transform: translate(90px, 0px);
+}
+.img4 img{
+    animation: flipH 2s linear infinite;
+}
+
+.img6{
+    transform: translate(-90px, 0px);
+}
+.img6 img{
+    animation: flipH 2s linear infinite;
+}
+
+@keyframes flipH {
+    0%{
+        transform: rotateY(0deg)
+    }
+    50%{
+        transform: rotateY(360deg)
+    }
+    100%{
+        transform: rotateY(0deg)
+    }
+}
+
+
+/* Second Title */
+
+
+/* Third Title */
+
+.title .allImg3{
+    position: absolute;
+}
+
+.mPic1{
+    transform: translate(-111px, -41px);
+}
+.mPic2{
+    transform: translate(-111px, -5px);
+}
+.mPic3{
+    transform: translate(-111px, 34px);
+}
+.mPic4{
+    transform: translate(111px, -41px);
+}
+.mPic5{
+    transform: translate(111px, -5px);
+}
+.mPic6{
+    transform: translate(111px, 34px);
+}
+.mPic7{
+    transform: translate(-2px, -41px);
+}
+.mPic8{
+    transform: translate(-58px, -41px);
+}
+.mPic9{
+    transform: translate(55px, -41px);
+}
+.mPic01{
+    transform: translate(-58px, 34px);
+}
+.mPic02{
+    transform: translate(55px, 34px);
+}
+.mPic03{
+    transform: translate(-2px, 34px);
+}
+
+/* Third Title */
+
+@keyframes heart{
+    0%{
+        left: -10%;
+    }
+    5%{
+        transform: translate(14px, -17px)
+    }
+    10%{
+        transform: translate(14px, 24px);
+    }
+    15%{
+        transform: translate(14px, -17px)
+    }
+    20%{
+        transform: translate(14px, 24px);
+    }
+    25%{
+        transform: translate(14px, -17px)
+    }
+    30%{
+        transform: translate(14px, 24px);
+    }
+    35%{
+        transform: translate(14px, -17px)
+    }
+    40%{
+        transform: translate(14px, 24px);
+    }
+    45%{
+        transform: translate(14px, -17px)
+    }
+    50%{
+        transform: translate(14px, 24px);
+    }
+    55%{
+        transform: translate(14px, -17px)
+    }
+    60%{
+        transform: translate(14px, 24px);
+    }
+    65%{
+        transform: translate(14px, -17px)
+    }
+    70%{
+        transform: translate(14px, 24px);
+    }
+    75%{
+        transform: translate(14px, -17px)
+    }
+    80%{
+        transform: translate(14px, 24px);
+    }
+    85%{
+        transform: translate(14px, -17px)
+    }
+    90%{
+        transform: translate(14px, 24px);
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+/* Animation title */
+
+
+/* About Section */
+
+.about{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.about .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85%;
+}
+
+.about .a-sideImage img{
+    max-width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+
+/* About Card */
+
+.about .card {
+    width: 170px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about .card p {
+    z-index: 1;
+    color: white;
+    direction: rtl;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+    transform: rotate(0deg);
+    }
+
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.about .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+}  
+
+/* About Card */
+
+/* About Section */
+
+
+/* Heart */
+
+.heartImg{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.heartImg img{
+    border-radius: 50%;
+}
+
+/* Heart */
+
+/* About2 Section */
+
+.about2{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.about2 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 85%;
+}
+
+.about2 .b-sideImage img{
+    max-width: 100%;
+    height: 260px;
+    border-radius: 10px;
+}
+
+/* About2 Card */
+
+.about2 .card {
+    width: 170px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about2 .card p {
+    z-index: 1;
+    color: white;
+    direction: rtl;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about2 .card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(255, 108, 243), rgb(0, 240, 208));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+    transform: rotate(0deg);
+    }
+
+    to {
+    transform: rotate(360deg);
+    }
+}
+
+.about2 .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+}  
+
+/* About2 Card */
+
+/* About2 Section */
+
+
+/* sec1 */
+
+.sec1{
+    width: 100%;
+    height: 50vh;
+    background-color: #bebebe;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sec1 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.sec1 p{
+    width: 60%;
+    direction: rtl;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.sec1 .c-sideImage img{
+    max-width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+/* sec1 */
+
+/* sec2 */
+
+.sec2{
+    width: 100%;
+    height: 50vh;
+    background-color: #bebebe;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sec2 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.sec2 p{
+    width: 60%;
+    direction: rtl;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.sec2 .c-sideImage2 img{
+    max-width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+/* sec2 */
+
+
+/* sec3 */
+
+.sec3{
+    width: 100%;
+    height: 50vh;
+    background-color: #bebebe;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sec3 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.sec3 p{
+    width: 60%;
+    direction: rtl;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.sec3 .c-sideImage3 img{
+    max-width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+
+/* sec3 */
+
+
+/* Message Section */
+/* Message */
+
+.msg{
+    width: 100%;
+    height: 93vh;
+    margin-top: 50px;
+    background-color: #bebebe;
+    padding-top: 50px;
+    transition: 0.5s;
+}
+
+.msg .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.msg p{
+    width: 100%;
+    direction: rtl;
+}
+
+/* Message */
+/* The test */
+.test{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #bebebe;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    transition: 0.5s;
+}
+
+.test .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.test h1{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: wheat;
+    color: #2196F3;
+    border-radius: 20px;
+}
+
+.cubes{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cubes .cube{
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: gray;
+    color: cyan;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.redShadow{
+    box-shadow: inset 0px 0px 20px 8px red;
+}
+.greenShadow{
+    box-shadow: inset 0px 0px 20px 8px green;
+}
+/* The test */
+/* Message Section */
+/* Cong Section */
+
+.cong{
+    position: absolute;
+}
+.cong img{
+    width: 100%;
+    height: 50vh;
+}
+
+/* Cong Section */
+
+@media (max-width: 600px) {
+    body{
+        background-position-x: -120px;
+    }
+    /* Home image part */
+    .H-sec img{
+        height: 50vh;
+    }
+    /* Home image part */
+    /* poem part */
+    .word .container{
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .word .card{
+        width: 170px;
+    }
+    .side-info{
+        justify-content: space-between;
+    }
+    .side-info p{
+        width: 160px;
+        background-position-x: 25px;
+    }
+    .side-image img{
+        height: 200px;
+        width: 130px;
+    }
+
+    /* poem part */
+    /* Animation title */
+    .img{
+        animation: heart 5s linear infinite;
+    }
+    .img2{
+        animation: heart 4.8s linear infinite;
+    }
+    .img3{
+        animation: heart 4.9s linear infinite;
+    }
+    /* Animation title */
+    /* About Section */
+    .about .a-sideImage img{
+        height: 250px;
+        width: 150px;
+    }
+    /* About Section */
+    /* About2 Section */
+    .about2 .b-sideImage img{
+        height: 250px;
+        width: 150px;
+    }
+    /* About2 Section */
+    /* Message Section */
+    /* Message */
+    .msg{
+        height: 100vh;
+        padding-top: 10px;
+    }
+    /* Message */
+    /* The Test */
+    .cubes .cube{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+    /* The Test */
+    /* Message Section */
+}
