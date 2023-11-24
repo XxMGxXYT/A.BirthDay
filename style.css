@@ -651,7 +651,7 @@ body{
 
 .msg{
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     margin-top: 50px;
     background-color: #bebebe;
     padding-top: 50px;
@@ -748,6 +748,8 @@ body{
 
 /* Cong Section */
 
+
+
 @media (max-width: 600px) {
     body{
         background-position-x: -120px;
@@ -804,7 +806,7 @@ body{
     /* Message Section */
     /* Message */
     .msg{
-        height: 100vh;
+        height: 107vh;
         padding-top: 10px;
     }
     /* Message */
@@ -816,4 +818,90 @@ body{
     }
     /* The Test */
     /* Message Section */
+}
+
+@media (max-width: 340px){
+    /* Poem Part */
+    .word{
+        height: 130vh;
+    }
+    .side-info p{
+        width: 119px;
+        background-position-x: -3px;
+        font-size: 12px;
+    }
+    .side-image img{
+        height: 180px;
+        width: 100px;
+    }
+    /* Poem Part */
+    /* About Section */
+    .about{
+        height: 65vh;
+    }
+    .about .card{
+        width: 120px;
+        height: 210px;
+    }
+    .about .card p{
+        line-height: 30px;
+        font-size: 13px;
+    }
+    .about .a-sideImage img {
+        height: 200px;
+        width: 120px;
+    }
+    /* About Section */
+    /* About2 Section */
+    .about2{
+        height: 65vh;
+    }
+    .about2 .card{
+        width: 130px;
+        height: 210px;
+    }
+    .about2 .card p{
+        line-height: 35px;
+        font-size: 12px;
+    }
+    .about2 .b-sideImage img {
+        height: 200px;
+        width: 120px;
+    }
+    /* About2 Section */
+    /* Sec1 */
+    .sec1{
+        height: 65vh;
+    }
+    .sec1 p{
+        font-size: 14px;
+    }
+    /* Sec1 */
+    /* Sec2 */
+    .sec2{
+        height: 65vh;
+    }
+    .sec2 p{
+        font-size: 14px;
+    }
+    /* Sec2 */
+    /* Sec3 */
+    .sec3{
+        height: 65vh;
+    }
+    .sec3 p{
+        font-size: 14px;
+    }
+    /* Sec3 */
+    /* Cubes */
+    .cubes .cube{
+        width: 30px;
+        height: 30px;
+    }
+    /* Cubes */
+    /* Message */
+    .msg{
+        height: 140vh;
+    }
+    /* Message */
 }
